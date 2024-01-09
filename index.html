@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CX330Blake | Intro</title>
+        <link rel="stylesheet" type="text/css" href="./layout/button.css" />
+        <link rel="stylesheet" type="text/css" href="./layout/style.css" />
+        <script src="https://cdn.skypack.dev/three/build/three.min.js"></script>
+    </head>
+    <body>
+        <audio
+            id="universe"
+            src="./audio/Travel the Universe.mp3"
+            type="audio/mp3"
+            loop
+            autoplay
+        ></audio>
+        <!-- SPLIT -->
+
+        <!-- SPLIT -->
+        <script src="./src/script.js"></script>
+
+        <div class="cosmos">
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="title_frame">
+                <button class="btn-82" id="entry"><span>CX330Blake</span></button>
+            </div>
+            <script>
+                var button = document.getElementById("entry");
+                function jump() {
+                    window.location.href = "./about.html";
+                }
+
+                button.addEventListener("click", jump);
+            </script>
+        </div>
+    </body>
+</html>
