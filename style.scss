@@ -37,17 +37,77 @@ body {
     height: 3px;
     box-shadow: stars(400);
 }
+.cosmos:before {
+    animation: star-rotate 12s linear infinite reverse;
+}
+.cosmos:after {
+    animation: star-rotate 6s linear infinite reverse;
+}
+
+@keyframes star-rotate {
+    0% {
+        transform: scale(3);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(2);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0.2;
+    }
+}
+
+.star {
+    transform-style: preserve-3d;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    opacity: 0;
+}
+
+.star:nth-child(1) {
+    width: 1px;
+    height: 1px;
+    box-shadow: stars(800);
+    animation: star-rotate 12s linear 6s infinite reverse;
+}
+
+.star:nth-child(2) {
+    width: 2px;
+    height: 2px;
+    box-shadow: stars(600);
+    animation: star-rotate 8s linear 4s infinite reverse;
+}
+
+.star:nth-child(3) {
+    width: 2px;
+    height: 2px;
+    box-shadow: stars(400);
+    animation: star-rotate 6s linear 3s infinite reverse;
+}
+
+.star:nth-child(4) {
+    width: 2px;
+    height: 2px;
+    box-shadow: stars(1000);
+    animation: star-rotate 12s linear 6s infinite reverse;
+}
+
 .title_frame {
     display: flex;
-    // background-color: #3c3c3c;
+    height: 100vh;
     align-items: center;
     justify-content: center;
 }
 
 .title {
+    display: flex;
     text-align: center;
     font-weight: bold;
     font-size: 30px;
-    margin-bottom: 15px;
+    margin: 0;
     color: whitesmoke;
+    font-style: italic;
 }
