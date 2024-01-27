@@ -138,4 +138,12 @@
   to {
     opacity: 1;
   }
+}
+.sound {
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+  margin-top: 5%;
+  margin-left: 5%;
+  cursor: pointer;
 }/*# sourceMappingURL=button.css.map */
