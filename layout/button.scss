@@ -179,10 +179,16 @@
     }
 }
 .sound {
+    position: absolute;
     width: 30px;
     height: 30px;
     flex-shrink: 0;
-    margin-top: 5%;
-    margin-left: 5%;
+    top: 0;
+    right: 0;
+    margin-top: 2vh;
+    margin-right: 3vw;
     cursor: pointer;
+}
+#play.sound {
+    display: none;
 }

@@ -9,10 +9,7 @@
         <script src="https://cdn.skypack.dev/three/build/three.min.js"></script>
     </head>
     <body>
-        <audio id="universe" src="./audio/INTERSTELLAR.mp3" type="audio/mp3" loop autoplay></audio>
-        <!--  
-        加入一個mute/unmute按鈕
-         -->
+        <audio id="universe" src="./audio/INTERSTELLAR.mp3" type="audio/mp3" loop></audio>
         <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -65,7 +62,6 @@
                 fill="white"
             />
         </svg>
-        <script src="./src/script.js"></script>
 
         <div class="cosmos">
             <div class="star"></div>
@@ -84,5 +80,6 @@
                 button.addEventListener("click", jump);
             </script>
         </div>
+        <script src="./src/script.js"></script>
     </body>
 </html>

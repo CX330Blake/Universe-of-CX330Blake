@@ -140,3 +140,18 @@ body {
     color: white;
     font-size: 100px;
 }
+#title1 {
+    position: relative;
+    letter-spacing: 0.25em;
+    padding-top: 10vh;
+    padding-left: 10vw;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: white;
+    font-family: monospace;
+}
+#splitline {
+    position: absolute;
+    left: 10vw;
+    right: 10vw;
+}
