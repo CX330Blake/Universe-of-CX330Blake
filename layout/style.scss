@@ -8,10 +8,9 @@ body {
     margin: 0;
     padding: 0;
     // background: radial-gradient(circle, #000 10%, #1d1d26);
-    background-color: #15151e;
+    background-color: #0c0c13;
     transform-style: preserve-3d;
     perspective: 10000px;
-    overflow: auto;
 }
 
 @function stars($n) {
