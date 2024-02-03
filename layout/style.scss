@@ -1,3 +1,7 @@
+html {
+    height: auto;
+    width: auto;
+}
 body {
     width: auto;
     height: auto;
@@ -6,7 +10,6 @@ body {
     background: radial-gradient(circle, #000 10%, #1d1d26);
     transform-style: preserve-3d;
     perspective: 10000px;
-    // overflow: hidden;
 }
 
 @function stars($n) {
