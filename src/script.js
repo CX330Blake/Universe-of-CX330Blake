@@ -1,11 +1,3 @@
-document.addEventListener(
-    "touchmove",
-    (e) => {
-        e.preventDefault();
-    },
-    { passive: false }
-);
-
 // Music button
 const music = document.getElementById("universe");
 const mute_icon = document.getElementById("mute");
