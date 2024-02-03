@@ -11,6 +11,7 @@ body {
     background-color: #0c0c14;
     transform-style: preserve-3d;
     perspective: 10000px;
+    overflow-x: hidden;
 }
 
 @function stars($n) {
