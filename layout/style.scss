@@ -154,6 +154,22 @@ body {
     // border: solid;
     // border-color: white;
 }
+.board p {
+    word-wrap: break-word;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    font-family: monospace;
+    font-size: large;
+    letter-spacing: 0.1em;
+}
+.board svg {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    margin-right: 5vw;
+    margin-top: 1vh;
+    cursor: pointer;
+}
 
 .title_frame {
     position: relative;
@@ -177,6 +193,6 @@ body {
     letter-spacing: 0.25em;
 }
 #splitline {
-    position: absolute;
+    position: relative;
     width: 100%;
 }
