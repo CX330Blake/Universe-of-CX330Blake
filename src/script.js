@@ -60,6 +60,7 @@ function to_button(svg, url = "", msg = "") {
     }
     svg.addEventListener("mouseover", function () {
         svg.style.transform = "scale(1.2)";
+        // 光標懸浮發光
     });
     svg.addEventListener("mouseout", function () {
         svg.style.transform = "scale(1)";
@@ -70,3 +71,5 @@ to_button(ig, "");
 to_button(fb, "https://www.facebook.com/profile.php?id=100011698690769");
 to_button(linkedin, "https://www.linkedin.com/in/%E5%AD%90%E9%9B%8B-%E9%99%B3-11087825b/");
 to_button(gmail, "", "timchen975@gmail.com");
+
+//增加點擊空白處特效

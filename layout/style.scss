@@ -1,12 +1,12 @@
 body {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     margin: 0;
     padding: 0;
     background: radial-gradient(circle, #000 10%, #1d1d26);
     transform-style: preserve-3d;
     perspective: 10000px;
-    overflow: hidden;
+    // overflow: hidden;
 }
 
 @function stars($n) {
@@ -19,6 +19,8 @@ body {
 }
 
 .cosmos {
+    width: 100%;
+    height: 100%;
 }
 .cosmos:before,
 .cosmos:after {
@@ -128,12 +130,7 @@ body {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
 }
-// @media screen and (max-width: 400px) {
-//     .glass {
-//         margin-left: 10%;
-//         margin-right: 10%;
-//     }
-// }
+
 .content_in_glass {
     background-color: transparent;
     height: auto;
@@ -148,11 +145,10 @@ body {
     left: 0;
     right: 0;
     width: 80vw;
-    height: 100vh;
+    height: 100%;
     margin-left: auto;
     margin-right: auto;
-    // border: solid;
-    // border-color: white;
+    padding-bottom: 5vh; // Set for <h4#sign>
 }
 .board p {
     word-wrap: break-word;
@@ -196,3 +192,20 @@ body {
     position: relative;
     width: 100%;
 }
+
+#sign {
+    position: relative;
+    left: 0;
+    right: 0;
+    // bottom: 5vh;
+    margin: 0;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    padding: 0;
+    text-align: center;
+    color: white;
+    font-family: monospace;
+    letter-spacing: 0.15em;
+    font-weight: lighter;
+}
+//////////
