@@ -59,7 +59,7 @@ function to_button(svg, url = "", msg = "") {
             navigator.clipboard
                 .writeText(msg)
                 .then(function () {
-                    alert("Copied");
+                    alert(`${msg} is copied to your clipboard !`);
                 })
                 .catch(function (error) {
                     console.error("Error copying text: ", error);
