@@ -1,10 +1,21 @@
 html {
     height: auto;
     width: auto;
+    margin: 0;
+    padding: 0;
 }
 body {
-    width: auto;
-    height: auto;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+#animation {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
     margin: 0;
     padding: 0;
     // background: radial-gradient(circle, #000 10%, #1d1d26);
@@ -24,8 +35,9 @@ body {
 }
 
 .cosmos {
-    width: 100%;
-    height: 100%;
+    height: 0;
+    width: 0%;
+    overflow: hidden;
 }
 .cosmos:before,
 .cosmos:after {
@@ -103,6 +115,20 @@ body {
     animation: star-rotate 12s linear 6s infinite reverse;
 }
 
+.banner {
+    position: fixed;
+    width: 100%;
+    height: 8vh;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    z-index: 999;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    background: linear-gradient(120deg, rgba(93, 87, 100, 0.208) 0%, rgba(73, 69, 71, 0.208) 100%);
+    overflow: hidden;
+}
+
 .entry {
     display: flex;
     height: 100vh;
@@ -147,10 +173,11 @@ body {
 .board {
     position: relative;
     top: 10vh;
+    bottom: 0;
     left: 0;
     right: 0;
     width: 80vw;
-    height: 100%;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 5vh; // Set for <h4#sign>
@@ -214,7 +241,9 @@ body {
     font-weight: lighter;
 }
 #gotop {
+    // display: none;
     position: fixed;
+    cursor: pointer;
     width: 30px;
     height: 30px;
     right: 3vw;
