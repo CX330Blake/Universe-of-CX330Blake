@@ -20,6 +20,7 @@
         </div>
         <audio id="universe" src="/src/INTERSTELLAR.mp3" type="audio/mp3" loop></audio>
         <header class="banner">
+            <h1 id="banner_title">CX330Blake's Universe</h1>
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="30"
@@ -74,7 +75,7 @@
             </svg>
         </header>
         <div class="board">
-            <div class="title_frame"><h1 id="title1">About CX330Blake</h1></div>
+            <div class="title_frame"><h1 id="title1">Whoami</h1></div>
             <hr id="splitline" />
             <p style="color: white">
                 This is a test content. This is a test content. This is a test content. This is a
@@ -234,6 +235,26 @@
                 ></path>
             </svg>
             <h4 id="sign">Designed By CX330Blake</h4>
+            <script>
+                window.onscroll = function () {
+                    scrollFunction();
+                };
+
+                function scrollFunction() {
+                    var gotop = document.getElementById("gotop");
+                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                        gotop.style.display = "block";
+                    } else {
+                        gotop.style.display = "none";
+                    }
+                }
+                function gotop() {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: "smooth",
+                    });
+                }
+            </script>
         </div>
 
         <svg
@@ -245,6 +266,7 @@
             viewBox="0 0 469.75 469.75"
             xml:space="preserve"
             stroke="#ffffff"
+            onclick="gotop()"
         >
             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
             <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
