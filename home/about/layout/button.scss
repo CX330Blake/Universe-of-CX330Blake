@@ -188,7 +188,7 @@
     right: 3vw;
     margin: 0;
     cursor: pointer;
-    z-index: inherit;
+    z-index: inherit + 1;
 }
 .sound#play {
     display: none;
