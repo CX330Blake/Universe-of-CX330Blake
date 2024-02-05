@@ -141,6 +141,8 @@
 }
 .sound {
   position: fixed;
+  display: flex;
+  justify-content: center;
   width: 30px;
   height: 30px;
   flex-shrink: 0;
