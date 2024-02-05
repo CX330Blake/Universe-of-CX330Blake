@@ -145,12 +145,12 @@
   height: 30px;
   flex-shrink: 0;
   top: 0;
-  right: 0;
-  margin-top: 2vh;
-  margin-right: 3vw;
+  bottom: 0;
+  right: 3vw;
+  margin: auto;
   cursor: pointer;
 }
 
-#play.sound {
+.sound#play {
   display: none;
 }/*# sourceMappingURL=button.css.map */
