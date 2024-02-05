@@ -10,7 +10,15 @@
         <script src="https://cdn.skypack.dev/three/build/three.min.js"></script>
     </head>
     <body>
-        <audio id="universe" src="./audio/INTERSTELLAR.mp3" type="audio/mp3" loop></audio>
+        <div id="animation">
+            <div class="cosmos">
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+            </div>
+        </div>
+        <audio id="universe" src="./src/INTERSTELLAR.mp3" type="audio/mp3" loop></audio>
         <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -64,12 +72,6 @@
             />
         </svg>
 
-        <div class="cosmos">
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-        </div>
         <div class="entry">
             <button class="btn-82" id="entry"><span>CX330Blake</span></button>
         </div>
