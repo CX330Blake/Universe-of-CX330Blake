@@ -1,9 +1,12 @@
 @keyframes glow {
     0% {
-        text-shadow: -10px 0 10px #ffffff; /* 初始状态，阴影偏移量为负值，从左边开始 */
+        text-shadow: none;
+    }
+    50% {
+        text-shadow: 0 0 5px white, 0 0 10px #ffffff, 0 0 15px #ffffff, 0 0 20px white;
     }
     100% {
-        text-shadow: 10px 0 10px #ffffff; /* 最终状态，阴影偏移量为正值，到达右边 */
+        text-shadow: none;
     }
 }
 
