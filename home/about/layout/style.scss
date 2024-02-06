@@ -24,7 +24,8 @@ body {
     background-color: #0c0c14;
     transform-style: preserve-3d;
     perspective: 10000px;
-    overflow-x: hidden;
+    // overflow-x: hidden;
+    overflow: hidden;
 }
 
 @function stars($n) {
@@ -255,20 +256,32 @@ body {
     bottom: 30vh;
 }
 #banner_title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 70%;
-    margin: 0;
+    position: absolute;
+    left: 12.5vw;
+    top: 0;
+    bottom: 0;
+    height: auto;
+    width: auto;
     color: white;
     font-family: monospace;
     letter-spacing: 0.1em;
-    text-align: center;
+    text-align: left;
+    border-left: white solid;
 }
+#banner_title br {
+    display: none;
+}
+
 @media screen and (max-width: 400px) {
     #banner_title {
-        font-size: 20px;
+        line-height: 0.9em;
+        font-size: 18px;
+        margin: 0;
+        top: 1.5vh;
+        bottom: 1.5vh;
+    }
+    #banner_title br {
+        display: block;
     }
     .banner {
         height: 8vh;
