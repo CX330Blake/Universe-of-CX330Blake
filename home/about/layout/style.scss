@@ -274,8 +274,9 @@ body {
 
 @media screen and (max-width: 400px) {
     #banner_title {
-        line-height: 0.9em;
+        display: flex;
         font-size: 18px;
+        align-items: center;
         margin: 0;
         top: 1.5vh;
         bottom: 1.5vh;
