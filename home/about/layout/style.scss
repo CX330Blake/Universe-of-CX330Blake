@@ -1,3 +1,12 @@
+@keyframes glow {
+    0% {
+        text-shadow: -10px 0 10px #ffffff; /* 初始状态，阴影偏移量为负值，从左边开始 */
+    }
+    100% {
+        text-shadow: 10px 0 10px #ffffff; /* 最终状态，阴影偏移量为正值，到达右边 */
+    }
+}
+
 html {
     height: auto;
     width: auto;
@@ -245,7 +254,9 @@ body {
     font-family: monospace;
     letter-spacing: 0.15em;
     font-weight: lighter;
+    animation: glow 3s linear infinite;
 }
+
 #gotop {
     display: none;
     position: fixed;
