@@ -80,14 +80,8 @@ to_button(gmail, "", "timchen975@gmail.com");
 // 增加回到頁面頂端
 // 增加hackmd api -> https://medium.com/starbugs/%E7%94%A8-hackmd-%E8%88%87-github-action-%E6%89%93%E9%80%A0%E4%BD%A0%E7%9A%84%E9%9D%9C%E6%85%8B%E7%B6%B2%E7%AB%99-%E7%B7%9A%E4%B8%8A%E6%96%87%E7%AB%A0%E7%B7%A8%E8%BC%AF%E5%B9%B3%E5%8F%B0-1d9b1a663e18
 
-// function adjust_board_height() {
-//     var board = document.getElementById("board");
-//     var sign = document.getElementById("sign");
-//     var window_height = window.innerHeight;
-//     var board_height = board.offsetHeight;
-//     if (board_height < window_height) {
-//         sign.style.marginTop = "50vh";
-//     }
-// }
-// window.addEventListener("load", adjust_board_height);
-// window.addEventListener("resize", adjust_board_height);
+// 標題回主頁按鈕
+const title = document.getElementById("banner_title");
+title.addEventListener("click", function () {
+    window.location.href = "../../";
+});

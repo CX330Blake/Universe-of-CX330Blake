@@ -14,9 +14,9 @@
     background-image: none;
     color: #fff;
     cursor: pointer;
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-        Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji,
-        Segoe UI Symbol, Noto Color Emoji;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+        Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+        Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
     font-size: 100%;
     font-weight: 900;
     line-height: 1.5;
@@ -192,4 +192,16 @@
 }
 .sound#play {
     display: none;
+}
+
+.menu {
+    position: fixed;
+    height: 28px;
+    width: 28px;
+    left: 2vw;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.menu:hover {
+    transform: rotate(180deg);
 }

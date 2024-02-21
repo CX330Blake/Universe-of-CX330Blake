@@ -154,4 +154,17 @@
 
 .sound#play {
   display: none;
+}
+
+.menu {
+  position: fixed;
+  height: 28px;
+  width: 28px;
+  left: 2vw;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.menu:hover {
+  transform: rotate(180deg);
 }/*# sourceMappingURL=button.css.map */
