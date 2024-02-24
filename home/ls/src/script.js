@@ -85,3 +85,37 @@ const title = document.getElementById("banner_title");
 title.addEventListener("click", function () {
     window.location.href = "../../";
 });
+
+/////
+// Menu按鈕
+const menu = document.getElementById("menu");
+menu.addEventListener("mouseover", function () {
+    const menu_board = document.getElementById("menu_board");
+    menu_board.style.display = "block";
+    menu.style.transform = "rotate(180deg)";
+});
+menu.addEventListener("mouseout", function () {
+    const menu_board = document.getElementById("menu_board");
+    menu_board.style.display = "none";
+});
+const menu_board = document.getElementById("menu_board");
+menu_board.addEventListener("mouseover", function () {
+    menu_board.style.display = "block";
+});
+menu_board.addEventListener("mouseout", function () {
+    menu_board.style.display = "none";
+    menu.style.transform = "rotate(0deg)";
+});
+// Menu_list的跳轉功能
+const intro_button = document.getElementById("intro");
+const whoami_button = document.getElementById("whoami");
+const ls_button = document.getElementById("ls");
+intro_button.addEventListener("click", function () {
+    window.location.href = "/";
+});
+whoami_button.addEventListener("click", function () {
+    window.location.href = "/home/whoami/";
+});
+ls_button.addEventListener("click", function () {
+    window.location.href = "/home/ls/";
+});

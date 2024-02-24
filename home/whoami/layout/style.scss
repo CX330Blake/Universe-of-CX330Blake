@@ -147,7 +147,7 @@ body {
     background: linear-gradient(
         120deg,
         rgba(93, 87, 100, 0.208) 0%,
-        rgba(73, 69, 71, 0.208) 100%
+        rgba(35, 29, 53, 0.208) 100%
     );
     overflow: hidden;
 }
@@ -317,6 +317,7 @@ body {
     width: 270px;
     bottom: 0;
     height: calc(100% - 8vh);
+    height: 100%;
     position: fixed;
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
@@ -325,5 +326,26 @@ body {
         rgba(93, 87, 100, 0.208) 0%,
         rgba(35, 29, 53, 0.208) 100%
     );
-    z-index: 999;
+    z-index: 1000;
+}
+
+.menu_list {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    // background-color: rgb(168, 166, 166);
+    height: 8vh;
+    color: white;
+    font-size: 20px;
+    font-family: monospace;
+    cursor: pointer;
+    border-bottom: rgb(42, 42, 67) solid 2px;
+}
+.menu_list svg {
+    position: relative;
+    height: 30px;
+    width: 30px;
+    // left: calc(3vw + 30px);
+    left: 2vw;
+    margin-right: 4vw;
 }
