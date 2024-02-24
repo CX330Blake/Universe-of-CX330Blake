@@ -111,11 +111,11 @@ const intro_button = document.getElementById("intro");
 const whoami_button = document.getElementById("whoami");
 const ls_button = document.getElementById("ls");
 intro_button.addEventListener("click", function () {
-    window.location.href = "/";
+    window.location.href = "../../";
 });
 whoami_button.addEventListener("click", function () {
-    window.location.href = "/home/whoami/";
+    window.location.href = "../whoami/";
 });
 ls_button.addEventListener("click", function () {
-    window.location.href = "/home/ls/";
+    window.location.href = "../ls/";
 });
