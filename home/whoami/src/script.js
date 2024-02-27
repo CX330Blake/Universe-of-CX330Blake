@@ -118,7 +118,6 @@ menu_board.addEventListener("click", function () {
     menu_board.style.display = "none";
     menu.style.transform = "rotate(0deg)";
 });
-
 // Menu_list的跳轉功能
 const intro_button = document.getElementById("intro");
 const whoami_button = document.getElementById("whoami");
