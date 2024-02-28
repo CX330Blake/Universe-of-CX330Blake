@@ -213,6 +213,8 @@ body {
     font-family: monospace;
     font-size: large;
     letter-spacing: 0.1em;
+    color: white;
+    line-height: 1.5;
 }
 .board svg {
     position: relative;
@@ -348,4 +350,18 @@ body {
     // left: calc(3vw + 30px);
     left: 2vw;
     margin-right: 4vw;
+}
+a {
+    color: aliceblue;
+}
+ol {
+    list-style: decimal-leading-zero inside none;
+    word-wrap: break-word;
+    margin-left: 5vw;
+    list-style-position: outside;
+    font-family: monospace;
+    color: white;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+    font-size: large;
 }
